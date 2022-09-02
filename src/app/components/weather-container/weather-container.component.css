@@ -1,0 +1,124 @@
+.container {
+    background-color: var(--red);
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgb(100, 1, 1);
+    height: 80vh;
+    width: 400px;
+}
+
+.topComponent {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 50%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.img-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.weather-data {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: var(--shadow-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.location {
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.temperature {
+    color: white;
+    font-size: 4em;
+    text-align: center;
+    font-weight: 900;
+}
+
+.bottomComponent {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    border-bottom-left-radius: 5x;
+    border-bottom-right-radius: 5px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.more-info-label {
+    color: var(--ivory);
+}
+
+.more-info-container {
+    flex: 1;
+    background-color: var(--shadow-light);
+    /* border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; */
+    border-radius: 5px;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.info-block {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.info-block-label {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-block-label img {
+    width: 1.5em;
+}
+
+.info-block-label span {
+    color: var(--ivory);
+    font-size: 0.8em;
+}
+
+.info-block-value {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--ivory);
+}
+
+.search {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.search input {
+    background-color: var(--shadow-light);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 1em;
+    color: rgb(189, 182, 182);
+    font-size: 0.8em;
+    text-align: center;
+}
