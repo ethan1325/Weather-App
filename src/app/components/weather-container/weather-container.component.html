@@ -5,11 +5,11 @@
 </div>
 <div class="container" *ngIf="weatherData">
     <div class="topComponent">
-        <img src="../../../assets/sunny.jpg" alt="" class="img-top" *ngIf="weatherData.main.temp > 15">
-        <img src="../../../assets/rainy.jpg" alt="" class="img-top" *ngIf="weatherData.main.temp <= 15">
+        <img src="../../../assets/sunny.jpg" alt="" class="img-top" *ngIf="weatherData.main.temp > 60">
+        <img src="../../../assets/rainy.jpg" alt="" class="img-top" *ngIf="weatherData.main.temp <= 60">
         <div class="weather-data">
             <div class="location">{{weatherData.name}}</div>
-            <div class="temperature">{{weatherData.main.temp | number: '1.0-0'}}°C</div>
+            <div class="temperature">{{weatherData.main.temp | number: '1.0-0'}}°F</div>
         </div>
     </div>
     <div class="bottomComponent">
@@ -23,7 +23,7 @@
                     <span>min</span>
                 </div>
                 <div class="info-block-value">
-                    {{weatherData.main.temp_min | number: '1.0-0'}}°C
+                    {{weatherData.main.temp_min | number: '1.0-0'}}°F
                 </div>
             </div>
 
@@ -33,7 +33,7 @@
                     <span>max</span>
                 </div>
                 <div class="info-block-value">
-                    {{weatherData.main.temp_max | number: '1.0-0'}}°C
+                    {{weatherData.main.temp_max | number: '1.0-0'}}°F
                 </div>
             </div>
 
